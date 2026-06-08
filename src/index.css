@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 18 90% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 12 85% 45%;
+
+    --secondary: 217 33% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 20%;
+    --muted-foreground: 215 20% 78%;
+
+    --accent: 18 90% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 18 90% 52%;
+
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(18 90% 52%),
+      hsl(12 85% 45%)
+    );
+
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(222 47% 11%),
+      hsl(217 33% 17%)
+    );
+
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(217 33% 17%),
+      hsl(222 47% 11%)
+    );
+
+    --shadow-glow: 0 20px 60px -10px hsl(18 90% 52% / 0.35);
+    --shadow-card: 0 10px 35px -10px hsl(0 0% 0% / 0.55);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 18 90% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 25%;
+    --sidebar-ring: 18 90% 52%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
