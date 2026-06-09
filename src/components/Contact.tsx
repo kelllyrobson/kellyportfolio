@@ -239,17 +239,7 @@ const Contact = () => {
                   qualidade, segurança e criatividade.
                 </p>
 
-                <a
-                  href="https://curriculo-interativo-gray.vercel.app/"
-                  className="w-full block"
-                >
-                  <Button
-                    variant="secondary"
-                    className="bg-white/20 hover:bg-white/30 text-white border-white/30 w-full"
-                  >
-                    Ver Currículo
-                  </Button>
-                </a>
+                {/* CTA removido conforme solicitado */}
               </CardContent>
             </Card>
           </div>
